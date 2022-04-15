@@ -5,7 +5,7 @@ li {
 
 /* Make everything with the class of 'done' grey*/
 .done {
-    color: gray;
+    color: grey;
 }
 
 /* Make the element with the id of 'clear' have a red BG and white text */
