@@ -1,0 +1,75 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 6em;
+    text-align: center;
+}
+
+nav {
+    font-size: 1.5em;
+}
+
+ul,
+li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+/* Option 1 */
+/* @media (min-width: 600px) and (max-width: 800px) {
+    h1 {
+        color: purple;
+    }
+} */
+
+/* Option 2: proper order */
+/* @media (max-width:1500px) {
+    h1 {
+        color: yellow;
+    }
+}
+
+@media (max-width:1000px) {
+    h1 {
+        color: orange;
+    }
+}
+
+@media (max-width:520px) {
+    h1 {
+        color: red;
+    }
+} */
+
+/* Option 3: default style defined for smallest screen and overwritten by rules for larger screens */
+h1 {
+    color: red;
+}
+
+@media (min-width: 520px) {
+    h1 {
+        color: orange;
+    }
+}
+
+@media (min-width: 1000px) {
+    h1 {
+        color: yellow;
+    }
+}
+
+@media (min-width: 1500px) {
+    h1 {
+        color: green;
+    }
+}
+
+/* Example with another query feature - orientation as a condition */
+@media (orientation:landscape) {
+    body {
+        background-color: magenta;
+    }
+}
