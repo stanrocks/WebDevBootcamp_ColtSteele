@@ -12,8 +12,26 @@
 // Example 1:
 const prices = [9.99, 1.5, 19.99, 49.99, 30.5];
 
+// sum total - classic way
 // let total = 0;
 // for (let price of prices) {
 //   total += price;
 // }
 // console.log(total);
+
+// sum total - using reduce
+const total = prices.reduce((total, price) => {
+  return total + price;
+});
+
+// find minimal number in prices array
+const minPrice = prices.reduce((min, price) => {
+  if (price < min) {
+    return price;
+  }
+  return min;
+});
+
+// Default value = 100
+const evens = [2, 4, 6, 8];
+evens.reduce((sum, num) => sum + num, 100); // 120
